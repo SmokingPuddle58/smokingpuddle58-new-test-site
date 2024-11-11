@@ -1,5 +1,6 @@
 ---
-
+const pageTitle = "About Me";
+import { ViewTransitions } from 'astro:transitions';
 ---
 
 <html lang="en">
@@ -8,12 +9,13 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>{pageTitle}</title>
+		<ViewTransitions />
 	</head>
 	<body>
 	<a href="/">Home</a>
 	<a href="/about/">About</a>
-		<h1>關於SmokingPuddle58的網頁試驗田</h1>
+		<h1>SmokingPuddle58的網頁試驗田</h1>
 		試緊你試緊你 🙂‍↕️
 	</body>
 </html>
